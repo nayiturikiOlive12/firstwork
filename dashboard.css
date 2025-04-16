@@ -1,0 +1,272 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+body{
+    background-color:whitesmoke;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.navigation nav p{
+    color: rgb(140, 115, 51);
+    margin-left: 44%;
+    font-size: 25px;
+    margin-top: -24px;
+}
+
+.logo{
+
+    margin-top: 23px;
+}
+
+.logo a{
+    font-size: 35px;
+    color:rgb(140, 115, 51);
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 119px;
+    
+}
+
+.content h2{
+    color: rgb(140, 115, 51);
+    margin-left:45%;
+    margin-top: 40px;
+
+}
+
+
+form {
+    margin-top: 20px;
+  padding: 25px;
+  max-width: 600px;
+  margin: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgb(140, 115, 51);
+}
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color:  rgb(79, 76, 66);
+  }
+input[type="date"]{
+    outline: none; 
+    border: 1px solid rgb(140, 115, 51); 
+    
+    font-size: 18px;
+    color: rgb(78, 78, 53);
+    border-radius: 12px;
+    width: 97.5%;
+    height: 40px;
+}
+
+form input[type="text"],
+form textarea {
+
+  width: 97.5%;
+  
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid rgb(140, 115, 51) ;
+  border-radius: 8px;
+  resize: vertical;
+  outline: none;
+  color: rgb(78, 78, 53);
+  font-size: 18px;
+
+}
+form button {
+    padding: 12px 20px;
+    background-color: rgb(140, 115, 51);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+  }
+ 
+ .footer{
+    width: 100%;
+    background-color:rgb(140, 115, 51);
+    height: 220px;
+    justify-content: space-around;
+    margin-top:60px;
+  }
+  .footer .content{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 30px;
+    
+  }
+  .myname{
+    margin-right: 50px;
+  
+  }
+  .myname p{
+    font-size: 25px;
+    color:rgb(14, 14, 14);
+  }
+  .content{
+  opacity:calc(20);
+  }
+  .content h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:whitesmoke;
+  
+  }
+  .link{
+    display: flex;
+    flex-direction: column;
+  }
+  .footer .link img{
+    width: 30px;
+    height: 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+  
+  }
+  .link a{
+    display: flex;
+    flex-direction: row;
+    margin-left: 45px;
+    margin-top: -25px;
+    font-size: 18px;
+    color: rgb(6, 6, 6);
+  
+  }
+  .copy{
+    margin-left:43%;
+    margin-top: 5%;
+  }
+  .footer .copy p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    color: rgb(245, 241, 241);
+  }
+/* .......................footer end................................... */
+#posts-list {
+    margin: 20px 33px;
+    display: grid;
+    gap: 20px;
+}
+
+.post-item {
+    background: white;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid rgb(140, 115, 51);
+    color: #ededed;
+}
+
+.post-item h3 {
+    color:rgb(140, 115, 51);
+    margin-bottom: 10px;
+}
+
+.post-item .date {
+    color: #666;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
+
+.post-item button {
+    background: rgb(140, 115, 51);
+    color: white;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.message {
+    padding: 10px;
+    margin: 10px 33px;
+    border-radius: 4px;
+}
+
+.message.success {
+    background: #2ecc71;
+    color: white;
+}
+
+.message.error {
+    background: #e74c3c;
+    color: white;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .navigation nav p {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .logo a {
+        margin-left: 20px;
+    }
+
+    .content h2 {
+        margin-left: 20px;
+    }
+
+    body form {
+        width: 90%;
+        margin: 20px auto;
+        height: 10%;
+        min-height: 300px;
+    }
+
+    #posts-list {
+        margin: 20px;
+        grid-template-columns: 1fr;
+    }
+
+    .footer {
+        margin: 20px auto;
+        position: relative;
+        margin-top: 37px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .navigation nav {
+        height: auto;
+        padding: 15px 0;
+    }
+
+    .logo a {
+        font-size: 28px;
+    }
+
+    .navigation nav p {
+        font-size: 20px;
+        margin-top: 10px;
+    }
+
+    body form input,
+    body form textarea {
+        font-size: 16px;
+    }
+    .post-item {
+        padding: 10px;
+    }
+
+    .message {
+        margin: 10px;
+    }
+}
+
+main {
+    flex: 1;
+}
